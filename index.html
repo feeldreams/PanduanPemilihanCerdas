@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentukan Pilihan Anda dengan Panduan Pemilihan Cerdas">
+    <meta name="keywords" content="Pemilu, Capres, Cawapres, 2024">
+    <meta name="author" content="R a y">
+
+    <meta property="og:title" content="Panduan Pemilihan Cerdas: Aplikasi Rekomendasi Pemilih Capres - Cawapres 2024" />
+    <meta property="og:url" content="https://cerdasmemilih.my.id" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
     <title>Panduan Pemilihan Cerdas: Aplikasi Rekomendasi Pemilih Capres - Cawapres 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
@@ -13,6 +22,30 @@
 
     body {
         font-family: "Poppins", sans-serif;
+    }
+
+    .pulsebtn {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 rgba(116, 46, 255, 0.4);
+            -webkit-box-shadow: 0 0 0 0 rgba(116, 46, 255, .4);
+            box-shadow: 0 0 0 0 rgba(116, 46, 255, 0.4)
+        }
+
+        70% {
+            -moz-box-shadow: 0 0 0 20px transparent;
+            -webkit-box-shadow: 0 0 0 20px transparent;
+            box-shadow: 0 0 0 20px transparent
+        }
+
+        100% {
+            -moz-box-shadow: 0 0 0 0 transparent;
+            -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent
+        }
     }
 </style>
 
@@ -217,7 +250,7 @@
                 </div>
             </div>
 
-            <button id="nextBtn" class="flex mx-auto bg-indigo-600 text-white py-2 px-4 rounded-2xl shadow">Mulai Sekarang</button>
+            <button id="nextBtn" class="flex mx-auto bg-indigo-600 font-bold text-sm text-white py-2 px-4 rounded-2xl shadow pulsebtn">Mulai Sekarang</button>
 
         </div>
 
@@ -229,8 +262,179 @@
             </div>
             <div class="py-6" id="pie-chart"></div>
             <div
-                class="mt-5 grid grid-cols-1 items-center border-gray-200 border-t justify-between">
+                class="my-5 grid grid-cols-1 items-center border-gray-200 border-t justify-between">
             </div>
+
+            <div class="flex flex-col gap-y-5">
+                <!-- Paslon 1 -->
+                <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div class="absolute top-0 left-0 text-base font-bold text-white bg-red-700 border-2 border-white p-2 rounded-lg m-1 shadow-md">
+                        <span id="ratePaslon1">0%</span>
+                    </div>
+                    <img class="rounded-t-lg" src="https://i.ibb.co/DfvC8K2/AMIN.webp" alt="Anies - Muhaimin" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Anies - Muhaimin</h5>
+                          <div class="collapse collapse-arrow bg-base-200 mt-5 mb-3">
+                            <input type="radio" name="visimisi-01" checked="checked" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                              Visi
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="text-sm">Indonesia Adil dan Makmur Untuk Semua</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="visimisi-01" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                                Misi
+                            </div>
+                            <div class="collapse-content"> 
+                                <ol class="max-w-md space-y-1 text-xs font-normal text-gray-700 list-decimal list-outside ms-3 dark:text-gray-400">
+                                    <li>
+                                        Memastikan ketersediaan kebutuhan pokok dan biaya hidup murah melalui kemandirian pangan, ketahanan energi, dan kedaulatan air,
+                                    </li>
+                                    <li>
+                                        Mengentaskan kemiskinan dengan memperluas kesempatan berusaha dan menciptakan lapangan kerja, mewujudkan upah berkeadilan, menjamin kemajuan ekonomi berbasis kemandirian dan pemerataan, serta mendukung korporasi Indonesia berhasil di negeri sendiri dan bertumbuh di kancah global;
+                                    </li>
+                                    <li>
+                                        Mewujudkan keadilan ekologis berkelanjutan untuk generasi mendatang: Membangun kota dan desa berbasis kawasan yang manusiawi, berkeadilan, dan saling memajukan;
+                                    </li>
+                                    <li>
+                                        Mewujudkan manusia Indonesia yang sehat, cerdas, produktif, berakhlak, serta berbudaya;
+                                    </li>
+                                    <li>
+                                        Mewujudkan keluarga Indonesia yang sejahtera dan bahagia sebagai akar kekuatan bangsa;
+                                    </li>
+                                    <li>
+                                        Memperkuat sistem pertahanan dan keamanan negara, serta meningkatkan peran dan kepemimpinan Indonesia dalam kancah global untuk mewujudkan kepentingan nasional dan perdamaian dunia;
+                                    </li>
+                                    <li>
+                                        Memulihkan kualitas demokrasi, menegakkan hukum dan HAM, memberantas korupsi tanpa tebang pilih, serta menyelenggarakan pemerintahan yang berpihak pada rakyat.
+                                    </li>
+                                </ol>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- Paslon 2 -->
+                <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div class="absolute top-0 left-0 text-base font-bold text-white bg-red-700 border-2 border-white p-2 rounded-lg m-1 shadow-md">
+                        <span id="ratePaslon2">0%</span>
+                    </div>
+                    <img class="rounded-t-lg" src="https://i.ibb.co/1b0bQ9D/PRAGIB.webp" alt="Prabowo - Gibran" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Prabowo - Gibran</h5>
+                        <div class="collapse collapse-arrow bg-base-200 mt-5 mb-3">
+                            <input type="radio" name="visimisi-02" checked="checked" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                              Visi
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="text-sm">Bersama Indonesia Maju Menuju Indonesia Emas 2045</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="visimisi-02" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                                Misi
+                            </div>
+                            <div class="collapse-content"> 
+                                <ol class="max-w-md space-y-1 text-xs font-normal text-gray-700 list-decimal list-outside ms-3 dark:text-gray-400">
+                                    <li>
+                                        Memperkokoh ideologi Pancasila, demokrasi, dan hak asasi manusia (HAM);
+                                    </li>
+                                    <li>
+                                        Memantapkan sistem pertahanan keamanan negara dan mendorong kemandirian bangsa melalui swasembada pangan, energi, air, ekonomi syariah, ekonomi digital, ekonomi hijau, dan ekonomi biru;
+                                    </li>
+                                    <li>
+                                        Melanjutkan pengembangan infrastruktur dan meningkatkan lapangan kerja yang berkualitas, mendorong kewirausahaan, mengembangkan industri kreatif serta mengembangkan agro-maritim industri di sentra produksi melalui peran aktif koperasi;
+                                    </li>
+                                    <li>
+                                        Memperkuat pembangunan sumber daya manusia (SDM), sains, teknologi, pendidikan, kesehatan, prestasi olahraga, kesetaraan gender, serta penguatan peran perempuan, pemuda (generasi milenial dan generasi Z), dan penyandang disabilitas;
+                                    </li>
+                                    <li>
+                                        Melanjutkan hilirisasi dan mengembangkan industri berbasis sumber daya alam untuk meningkatkan nilai tambah di dalam negeri;
+                                    </li>
+                                    <li>
+                                        Membangun dari desa dan dari bawah untuk pertumbuhan ekonomi, pemerataan ekonomi, dan pemberantasan kemiskinan;
+                                    </li>
+                                    <li>
+                                        Memperkuat reformasi politik, hukum, dan birokrasi, serta memperkuat pencegahan dan pemberantasan korupsi, narkoba, judi, dan penyelundupan;
+                                    </li>
+                                    <li>
+                                        Memperkuat penyelarasan kehidupan yang harmonis dengan lingkungan, alam dan budaya, serta peningkatan toleransi antarumat beragama untuk mencapai masyarakat yang adil dan makmur.
+                                    </li>
+                                </ol>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- Paslon 3 -->
+                <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <div class="absolute top-0 left-0 text-base font-bold text-white bg-red-700 border-2 border-white p-2 rounded-lg m-1 shadow-md">
+                        <span id="ratePaslon3">0%</span>
+                    </div>
+                    <img class="rounded-t-lg" src="https://i.ibb.co/M2K1bV4/GAMA.webp" alt="Ganjar - Mahfud" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Ganjar - Mahfud</h5>
+                        <div class="collapse collapse-arrow bg-base-200 mt-5 mb-3">
+                            <input type="radio" name="visimisi-03" checked="checked" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                              Visi
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="text-sm">Gerak Cepat Menuju Indonesia Unggul</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="visimisi-03" /> 
+                            <div class="collapse-title text-sm font-bold flex items-center">
+                                Misi
+                            </div>
+                            <div class="collapse-content"> 
+                                <ol class="max-w-md space-y-1 text-xs font-normal text-gray-700 list-decimal list-outside ms-3 dark:text-gray-400">
+                                    <li>
+                                        Manusia Indonesia yang sehat, terdidik, dan sejahtera;
+                                    </li>
+                                    <li>
+                                        Indonesia unggul dalam bidang inovasi dan teknologi, Ekonomi yang tangguh dan berdikari;
+                                    </li>
+                                    <li>
+                                        Hilangnya kemiskinan dan ketimpangan antarwilayah dari akarnya;
+                                    </li>
+                                    <li>
+                                        Ekosistem digital yang mengutamakan akses internet cepat dan terjangkau;
+                                    </li>
+                                    <li>
+                                        Pembangunan ekonomi yang memperhatikan kelestarian lingkungan;
+                                    </li>
+                                    <li>
+                                        Demokrasi terjaga melalui pemberantasan korupsi dan pemerintahan inklusif berlandaskan supremasi hukum;
+                                    </li>
+                                    <li>
+                                        Indonesia bangsa terhormat di kancah internasional, serta pertahanan yang tangguh dan modern.
+                                    </li>
+                                </ol>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="my-5 grid grid-cols-1 items-center border-gray-200 border-t justify-between">
+            </div>
+
+            <div class="flex justify-center w-full">
+                <a href="https://www.kpu.go.id/berita/baca/12129/visi-dan-misi-pasangan-calon-presiden-dan-calon-wakil-presiden-pada-pemilu-2024" target="_blank" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-2xl pulsebtn text-sm px-5 py-2.5 text-center me-2 mb-2">Lihat Visi dan Misi di KPU.go.id</a>
+            </div>
+
+            <div
+                class="my-5 grid grid-cols-1 items-center border-gray-200 border-t justify-between">
+            </div>
+
             <p class="text-md font-base mt-4"><b>Disclaimer:</b>&nbsp;Aplikasi ini sama sekali tidak memaksa Anda untuk
                 memilih pasangan calon tertentu. Keputusan akhir tetap sepenuhnya ada di tanganmu, dan aplikasi ini
                 hanya dirancang untuk membantu pemilih dalam memahami posisi politik dan pandangan kandidat paslon dalam
@@ -245,187 +449,6 @@
 
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const questions = document.querySelectorAll('.question');
-            const nextBtn = document.getElementById('nextBtn');
-            const scoreContainer = document.getElementById('score-container');
-            const scoreElement = document.getElementById('score');
-            const chartCanvas = document.getElementById('chart');
-            let welcome = true;
-            let currentQuestion = 0;
-            let score = 0;
-            let opsiA = 0;
-            let opsiB = 0;
-            let opsiC = 0;
-            const answerCounts = { A: 0, B: 0, C: 0 };
-
-            function showQuestion(index) {
-                questions.forEach(question => {
-                    question.style.display = 'none';
-                });
-
-                questions[index].style.display = 'block';
-
-                if(welcome == true){
-                    questions[index].style.display = 'none';
-                }
-            }
-            
-            function nextQuestion() {
-                const selectedOption = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
-
-                if (selectedOption) {
-                    answerCounts[selectedOption.value]++;
-                    
-                    if (selectedOption.value === getCorrectAnswer(currentQuestion + 1)) {
-                        score++;
-                    }
-                    
-                    if (selectedOption.value === "A") {
-                    	opsiA++;
-                    } else if (selectedOption.value === "B") {
-                    	opsiB++;
-                    } else if (selectedOption.value === "C") {
-                    	opsiC++;
-                    }
-                    
-                    currentQuestion++;
-
-                    if (currentQuestion < questions.length) {
-                        showQuestion(currentQuestion);
-                    } else {
-                        scoreElement.textContent = `${score} out of ${questions.length}`;
-                        //scoreContainer.style.display = 'block';
-                        blockQuestion.style.display = 'none';
-
-                        blockChart.style.display = 'block';
-                        const getChartOptions = () => {
-                            return {
-                            series: [opsiA, opsiB, opsiC],
-                            colors: ["#00A505", "#00DBFF", "#FF000F"],
-                            chart: {
-                                height: 420,
-                                width: "100%",
-                                type: "pie",
-                            },
-                            stroke: {
-                                colors: ["white"],
-                                lineCap: "",
-                            },
-                            plotOptions: {
-                                pie: {
-                                labels: {
-                                    show: true,
-                                },
-                                size: "100%",
-                                dataLabels: {
-                                    offset: -25
-                                }
-                                },
-                            },
-                            labels: ["Anies - Muhaimin", "Prabowo - Gibran", "Ganjar - Mahfud"],
-                            dataLabels: {
-                                enabled: true,
-                                style: {
-                                fontFamily: "Inter, sans-serif",
-                                },
-                            },
-                            legend: {
-                                position: "bottom",
-                                fontFamily: "Inter, sans-serif",
-                            },
-                            yaxis: {
-                                labels: {
-                                formatter: function (value) {
-                                    return value + "%"
-                                },
-                                },
-                            },
-                            xaxis: {
-                                labels: {
-                                formatter: function (value) {
-                                    return value  + "%"
-                                },
-                                },
-                                axisTicks: {
-                                show: false,
-                                },
-                                axisBorder: {
-                                show: false,
-                                },
-                            },
-                            }
-                        }
-
-                        if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
-                            const chart = new ApexCharts(document.getElementById("pie-chart"), getChartOptions());
-                            chart.render();
-                        }
-                    }
-                } else {
-                    alert('Tolong pilih salah satu opsi sebelum melanjutkan.');
-                }
-            }
-
-            function getCorrectAnswer(questionNumber) {
-                const correctAnswers = {
-                    1: 'D',
-                    2: 'D',
-                    3: 'D',
-                    4: 'D',
-                    5: 'D',
-                };
-
-                return correctAnswers[questionNumber];
-            }
-
-            showQuestion(currentQuestion);
-
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-            }
-
-            questions.forEach((question) => {
-                const optionsContainer = question.querySelector(".flex");
-
-                if (optionsContainer) {
-                    const options = Array.from(optionsContainer.children);
-                    shuffleArray(options);
-
-                    options.forEach((option) => {
-                        optionsContainer.appendChild(option);
-                    });
-                }
-            });
-
-            nextBtn.addEventListener('click', function(){
-                if(welcome == true){
-                    blockQuestion.style = "opacity:0;transition:all .7s ease";
-                    clearInterval(intervalPaslon);
-                    setTimeout(() => {
-                        nextBtn.innerText = "Selanjutnya";
-                        nextBtn.classList.remove("mx-auto");
-                        blockWelcome.classList.add("hidden");
-                        blockQuestion.style = "transition:all .7s ease";
-                        questions[0].style.display = 'block';
-                        welcome = false;
-                    }, 500);
-                } else {
-                    blockQuestion.style = "opacity:0;transition:all .7s ease";
-                    setTimeout(() => {
-                        nextQuestion();
-                        if (currentQuestion < questions.length) {
-                            blockQuestion.style = "transition:all .7s ease";
-                        }
-                    }, 500);
-                }
-            });
-
-        });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
